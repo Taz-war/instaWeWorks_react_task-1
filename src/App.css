@@ -1,0 +1,169 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navBar {
+  display: flex;
+  margin-bottom: 20px;
+}
+.img {
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.contact {
+  width: 45%;
+  text-align: right;
+  padding-top: 10px;
+}
+.contact p {
+  padding: 0%;
+  margin: 0%;
+
+  font-size: 15px;
+}
+.all {
+  display: flex;
+}
+/* card design */
+.container {
+  width: 65%;
+  text-align: left;
+  /* display: flex; */
+}
+.add {
+  width: 200px;
+  height: 40px;
+  padding: auto;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: rgb(155, 45, 148);
+  color: white;
+  border: none;
+}
+.add:hover {
+  border: 1px solid rgb(155, 45, 148);
+  background-color: transparent;
+  color: rgb(155, 45, 148);
+}
+.All-program {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0%;
+  margin-left: 30px;
+}
+.card {
+  width: 45vh;
+  height: 150px;
+  margin: 20px 20px;
+  box-shadow: 3px 3px 3px 3px #f1efef;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #fdfbfb;
+  /* padding-right: 0px; */
+  text-align: left;
+  display: inline-block;
+  display: flex;
+}
+.details {
+  width: 75vh;
+}
+.btn {
+  /* text-align: right; */
+  padding-top: 25px;
+  padding-right: 10px;
+}
+.edit-btn {
+  width: 60px;
+  height: 20px;
+}
+h1,
+h2 {
+  color: rgb(109, 0, 128);
+}
+p {
+  font-size: small;
+}
+#btn-3 {
+  width: 100px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(30, 154, 30);
+  color: white;
+  /* align-self:first baseline; */
+}
+#btn-3:hover {
+  background-color: transparent;
+  border: 1px solid rgb(30, 154, 30);
+  color: rgb(30, 154, 30);
+}
+
+/* Numbers div design */
+.numbers {
+  text-align: justify;
+  width: 30%;
+}
+table {
+  width: 90%;
+  text-align: center;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+tr{
+  height: 30px;
+}
+td {
+  /* width: 50%; */
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.left_td {
+  width: 60%;
+}
+
+.row-1 {
+  background-color: rgb(211, 207, 207);
+}
+.row-2 {
+  background-color: rgb(101, 49, 198);
+  color: white;
+}
