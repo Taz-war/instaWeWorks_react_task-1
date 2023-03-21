@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [card, setCard] = useState([]);
-  useEffect(() => {
-    fetch(`http://localhost:8080/notes`)
-      .then((response) => response.json())
-      .then((data) => {
-        setCard(data);
-      });
-  });
+  // const [card, setCard] = useState([]);
+  // useEffect(() => {
+  //   fetch(`http://localhost:8080/notes`)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setCard(data);
+  //     });
+  // });
   return (
     <div className="App">
       <nav className="navBar">
@@ -32,19 +32,73 @@ function App() {
         <div className="container">
           <button className="add">Add a new program</button>
           <div className="All-program">
-            {card.map((item) => (
-              <div className="card">
+            <div className="card">
+              <div className="details">
+                <h2>Program 1</h2>
+                <p>Date of program : 01/03/2023</p>
+                <p>program name : Japanese Dance</p>
+                <p>Present name : Hasan</p>
+              </div>
+              <div className="btn">
+                <button className="edit-btn">Edit</button>
+              </div>
+            </div>
+
+            <div className="card">
                 <div className="details">
-                  <h2>{item.title}</h2>
-                  <p>Date of program : {item.date}</p>
-                  <p>program name : {item.prog_name}</p>
-                  <p>Present name : {item.present_name}</p>
+                  <h2>Program 2</h2>
+                  <p>Date of program : 01/03/2023</p>
+                  <p>program name : Japanese Dance</p>
+                  <p>Present name : Hasan</p>
                 </div>
                 <div className="btn">
                   <button className="edit-btn">Edit</button>
                 </div>
               </div>
-            ))}
+              <div className="card">
+                <div className="details">
+                  <h2>Program 3</h2>
+                  <p>Date of program : 01/03/2023</p>
+                  <p>program name : Japanese Dance</p>
+                  <p>Present name : Hasan</p>
+                </div>
+                <div className="btn">
+                  <button className="edit-btn">Edit</button>
+                </div>
+              </div>
+              <div className="card">
+                <div className="details">
+                  <h2>Program 4</h2>
+                  <p>Date of program : 01/03/2023</p>
+                  <p>program name : Japanese Dance</p>
+                  <p>Present name : Hasan</p>
+                </div>
+                <div className="btn">
+                  <button className="edit-btn">Edit</button>
+                </div>
+              </div>
+              <div className="card">
+                <div className="details">
+                  <h2>Program 5</h2>
+                  <p>Date of program : 01/03/2023</p>
+                  <p>program name : Japanese Dance</p>
+                  <p>Present name : Hasan</p>
+                </div>
+                <div className="btn">
+                  <button className="edit-btn">Edit</button>
+                </div>
+              </div>
+              <div className="card">
+                <div className="details">
+                  <h2>Program 6</h2>
+                  <p>Date of program : 01/03/2023</p>
+                  <p>program name : Japanese Dance</p>
+                  <p>Present name : Hasan</p>
+                </div>
+                <div className="btn">
+                  <button className="edit-btn">Edit</button>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -89,7 +143,8 @@ function App() {
               </td>
             </tr>
           </table>
-
+          <br />
+          <br />
           <h1>Opportunity Expense</h1>
           <table className="Expense_table">
             <tr>
@@ -114,6 +169,8 @@ function App() {
               </td>
             </tr>
           </table>
+          <br />
+          <br />
           <h1>Net Profit</h1>
           <table className="Profit_table">
             <tr>
