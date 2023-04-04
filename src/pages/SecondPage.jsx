@@ -3,6 +3,7 @@ import {
   Button,
   Chip,
   Container,
+  Grid,
   Pagination,
   Table,
   TableBody,
@@ -39,7 +40,7 @@ const SecondPage = () => {
   return (
     <Container sx={{ justifyContent: "space-evenly" }}>
       <Container sx={{ display: "flex", justifyContent: "center" }}>
-        <Box width={"50%"} justifyContent={"space-around"} p={4}>
+        <Grid lg={6} xs={12} width={"50%"} justifyContent={"space-around"} p={4}>
           <Box textAlign={"left"}>
             <Typography variant="h6">Primary Contact :</Typography>
             <Typography variant="h4" color={"orange"}>
@@ -108,8 +109,8 @@ const SecondPage = () => {
               ALlocate Seat
             </Button>
           </Box>
-        </Box>
-        <Box width={"50%"}>
+        </Grid>
+        <Grid lg={6} xs={12} width={"50%"}>
           <Box
             boxShadow={"-8px -8px 8px #f1f1f1,8px 8px 8px #f1f1f1"}
             mt={8}
@@ -190,7 +191,7 @@ const SecondPage = () => {
               <br />
             </Box>
           </Box>
-        </Box>
+        </Grid>
       </Container>
       <Pagination count={2} page={2} onClick={() => navigate("/")} />
       <Box textAlign={"center"} mt={4}>
