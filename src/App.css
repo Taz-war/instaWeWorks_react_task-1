@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    color: rgb(244, 242, 242);
+  }
+}
+.MuiContainer-maxWidthLg{
+  padding: 0px !important;
+}
+.MuiOutlinedInput-root{
+  padding-right: 0% !important;
+}
+.MuiGrid-item{
+  padding-left: 0% !important;
+}
+
+/* .MuiInputBase-colorPrimary {
+  padding: 0% !important;
+} */
+/* .MuiInputBase-fullWidth {
+  padding: 0% !important;
+} */
+/* .MuiInputBase-formControl{
+  padding: 0% !important;
+} */
+.MuiInputBase-adornedEnd{
+  padding: 0% !important;
+}
+/* .MuiAutocomplete-inputRoo{
+  padding: 0% !important;
+} */
