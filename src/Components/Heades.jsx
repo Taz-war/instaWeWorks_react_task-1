@@ -6,6 +6,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+
+
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
 const MenuProps = {
@@ -18,16 +20,18 @@ const MenuProps = {
 };
 
 const names = [
-  'Oliver Hansen',
-  'Van Henry',
-  'April Tucker',
-  'Ralph Hubbard',
-  'Omar Alexander',
-  'Carlos Abbott',
-  'Miriam Wagner',
-  'Bradley Wilkerson',
-  'Virginia Andrews',
-  'Kelly Snyder',
+  "Intro Call",
+  "RPM Outreach",
+  "RPM Enrollment",
+  "Patient Outreach",
+  "HRA",
+  "Intake Appointment",
+  "Chart Review & Update",
+  "EC Outreach",
+  "Chart Note Request PCP",
+  "Other See Below",
+  "Sent Video",
+  "Sent Email Information CC",
 ];
 
 function getStyles(name, personName, theme) {
@@ -39,11 +43,18 @@ function getStyles(name, personName, theme) {
   };
 }
 
-export default function MultipleSelect() {
+export default function MultipleSelect({handleServices}) {
   const theme = useTheme();
   const [personName, setPersonName] = React.useState([]);
 
+  const handleField = (data) =>{
+    handleServices(data.target.value);
+    handleChange(data)
+    // console.log(data)
+  }
+
   const handleChange = (event) => {
+    handleServices(personName)
     const {
       target: { value },
     } = event;
@@ -62,11 +73,10 @@ export default function MultipleSelect() {
           id="demo-multiple-name"
           multiple
           value={personName}
-          onChange={handleChange}
-          input={<OutlinedInput label="Name" />}
+          onChange={(e)=>handleField(e)}
+          input={<OutlinedInput label="Dropdown" />}
           MenuProps={MenuProps}
           size='small'
-          
         >
           {names.map((name) => (
             <MenuItem
@@ -82,3 +92,4 @@ export default function MultipleSelect() {
     </div>
   );
 }
+
